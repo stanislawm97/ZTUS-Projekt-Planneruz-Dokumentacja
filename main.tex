@@ -1,0 +1,220 @@
+\documentclass[a4paper,11pt]{uzreport}
+\author{
+  Erwin Konkel\\
+  Mateusz Znojek\\
+  Stanisław Mól - Scrum Master\\
+}
+\group{33INF-SSI-SP/B}
+\class{Część teoretyczna}
+\labnumber{Zaawansowane technologie usług sieciowych}
+\date{20.01.2021}
+\supervisor{dr inż. Piotr Powroźnik}
+
+\begin{document}
+  \maketitle
+  
+\section{Opis systemu}
+	System przeznaczony do nakładania planu zajęć Uniwersytetu Zielonogórskiego na czytelną siatkę, na wzór do kalendarza google. Użytkownik ma możliwość wyboru kierunku, grupy oraz podgrupy, względem której ma zostać zmapowany plan. Informacje te zostaną zapamiętane dla zalogowanego użytkownika.
+    
+    \begin{itemize}[leftmargin=0.50in]
+
+        \item Grupą docelową systemu są studenci Uniwersytetu Zielonogórskiego.
+    
+    \end{itemize}
+
+\section{Opis istniejących rozwiązań}
+	Najszerzej znanym rozwiązaniem jest "G Suit" działający w chmurze obliczeniowej pakiet zwiększający produktywność oraz oprogramowanie do pracy grupowej i oprogramowanie oferowane przez Google na zasadzie subskrypcji. Na jego podstawie można wywnioskować, że czytelność planu odgrywa główną rolę i właśnie na tym aspekcie zostanie skupiony porojekt. Głównym elementem na którym wzorowany będzie cały projekt jest kalendarz google.
+
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=6in]{pictures/Kalendarz-Google_1.jpg}
+        \caption{Kalendarz Google}
+        \label{fig2}
+     \end{figure}
+
+\section{Opis problemów}
+	Główne problemy przewidziane podczas projektowania, oraz proponowane rozwiązania:
+
+	\begin{itemize}[leftmargin=0.5in]
+            
+		\item Przechowywanie danych użytkowników w bazie - jednym z problemów będzie przechowywanie danych wrażliwych takich jak hasła - 			 			rozwiązaniem tego problemu będzie przechowywanie zahashowanych danych.
+                
+ 	\end{itemize}
+
+\section{Diagram użycia}
+\section{Tabele przypadków użycia}
+
+
+
+\section{Diagram komponentów/obiektów}
+
+
+
+\section{Diagram funkcjonalny/strukturalny}
+
+
+    
+\clearpage
+\section{Funkcjonalności}
+    \begin{itemize}[leftmargin=0.50in]
+    
+     \item \textbf{Niezalogowany użytkownik:}
+            \begin{itemize}[leftmargin=0.25in]
+            
+                \item logowanie / rejestracja
+
+                \item wybór grupy dziekańskiej bez możliwości zapamiętania wyboru
+                
+                \item podgląd planu zajęć wybranej grupy dziekańskiej
+                
+                \item wybór motywu
+                
+            \end{itemize}
+
+     \item \textbf{Zalogowany użytkownik:}
+            \begin{itemize}[leftmargin=0.25in]
+            
+                \item wylogowanie
+
+                \item wybór grupy dziekańskiej z możliwością zapamiętania wyboru
+                
+                \item podgląd swojego planu
+                
+                \item możliwość dodania informacji o kolokwium do zajęć
+                
+                \item możliwość dodania własnego zdarzenia
+                
+                \item wysłanie powiadomienia e-mail z przypomnieniem
+                
+                \item wyszukiwanie wykładowcy
+                
+                \item wybór motywu
+                
+                \item edycja zdarzeń zawartych w kalendarzu
+                
+                \item tablica TODO
+     
+            \end{itemize}
+     
+    \end{itemize}
+    
+\clearpage
+\section{Opis funkcjonalności}
+    
+    \begin{itemize}[leftmargin=0.50in]
+    
+        \item \textbf{Rejestracja / Logowanie / Wylogowanie} - prosta funkcjonalność pozwalająca na zarejestrowanie się użytkownika, następnie autoryzację na podstawie podanego loginu i hasła, oraz wylogowanie po zakończonej sesji.
+        
+        \item \textbf{Wybór grupy dziekańskiej} - użytkownik niezalogowany będzie miał możliwość wyboru grupy i podglądu planu zajęć dla danej grupy, jednakże nie będzie miał możliwości zapamiętania tego wyboru. Dla użytkownika zalogowanego będzie istniała możliwość zapamiętania wybranej grupy, początkowo wybór ten będzie możliwy podczas rejestracji, lecz będzie można zmienić wybór w panelu użytkownika.
+        
+        \item \textbf{Podgląd planu} - plan będzie wyświetlany w czytelnej formie, dzięki nałożeniu na siatkę czasu (podobnie jak w kalendarzu google).
+        
+        \item \textbf{Dodanie informacji o kolokwium do zajęć} - zalogowany użytkownik będzie miał możliwość dodania informacji czy na danych zajęciach zaplanowane jest kolokwium.
+        
+        \item \textbf{Dodanie własnego zdarzenia} - zalogowany użytkownik ma możliwość dodania własnego zdarzenia.
+        
+        \item \textbf{Wysłanie powiadomienia e-mail} - po wcześniejszym zaznaczeniu opcji system będzie wysyłał powiadomienie e-mail o zbliżających się kolokwiach (jeżeli są dodane).
+        
+        \item \textbf{Wyszukanie wykładowcy} - możliwość wyszukania wykładowcy w systemie i znalezienia potrzebnych informacji o wykładowcy.
+        
+        \item \textbf{Wybór motywu} - użytkownik może wybrać motyw aplikacji (ciemny / jasny).
+        
+        \item \textbf{Edycja zdarzeń} - użytkownik zalogowany ma możliwość edytowania zdarzeń na własnym planie.
+        
+        \item \textbf{Tablica TODO} - prosta tablica z zadaniami do wykonania na następny dzień.
+        
+    \end{itemize}
+    
+\clearpage
+\section{Harmonogram zadań}
+    
+    \begin{figure}[ht!]
+	\vspace{-15pt}
+        \centering
+        \includegraphics[width=0.85\textwidth]{pictures/fabulous_uz_planner_2020-10-27_06.13pm.png}
+        \caption{Diagram Gantta}
+	\vspace{-30pt}
+     \end{figure}
+
+\begin{center}
+\begin{tabular}{ |m{6cm} | m{3cm}| m{3.5cm} | m{3cm} | } 
+\hline
+\textbf{Zadanie} 					& \textbf{Stanisław Mól} 	& \textbf{Mateusz Znojek} 		& \textbf{Erwin Konkel} \\ 
+\hline
+Przygotowanie dokumentacji 			& \checkmark			& 						&  \\ 
+\hline
+Organizacja 						& \checkmark 			& \checkmark 				& \checkmark \\ 
+\hline
+Konfiguracja narzędzi 					& \checkmark 			& \checkmark 				& \checkmark \\ 	
+\hline
+Inicjalizacja projektu					& \checkmark 			&  		 				&   \\ 
+\hline
+Makiety widoków					& 					&  		 				& \checkmark \\ 
+\hline
+Stworzenie bazy danych 				& 					& \checkmark 				&   \\ 
+\hline
+Podgląd planu 						& \checkmark 			&  		 				&   \\ 
+\hline
+Rejestracja 						& 					& \checkmark 				&   \\ 		
+\hline
+Logowanie 						& 					&  		 				& \checkmark \\ 
+\hline
+Wylogowanie 						&  					& \checkmark 				&   \\ 
+\hline
+Wybór grupy dziekańskiej 				&  					&  		 				& \checkmark \\ 
+\hline
+Dodanie własnego zdarzenia 			&  					& \checkmark 				&   \\ 
+\hline
+Wyszukiwanie 						& \checkmark 			&  		 				&   \\ 
+\hline
+Wybór motywu 						& 					& 		 				& \checkmark \\ 
+\hline
+Tabica TODO 						&  					& \checkmark 				&   \\ 
+\hline
+Dodanie informacji o kolokwium do zajęć 	& \checkmark 			& 		 				& \checkmark \\ 
+\hline
+Wysłanie powiadomienia e-mail 			& \checkmark			& \checkmark				& \checkmark \\ 
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
+\section{Plan testów}
+	Plan testów zakłada testowanie każdej historyjki przed oddaniem jej. Oznacza to, że każda funkcjonalność powinna zostać przetestowana przed dodaniem jej do głównej gałęzu projektu. Testy powinny być przeprowadzone na podstawie wyznaczonych kryteriów akceptacji.
+
+\section{Plan bezpieczeństwa}
+	Plan bezpieczeństwa zakłada dostarczenie możliwie uniwersalnych mechanizmów dla:
+            \begin{itemize}[leftmargin=0.5in]
+                \item uwierzytelniania (ang. authentication) - jestem tym za kogo się podaję bo: znam pin, znam hasło, mam takie odciski palców, posiadam certyfikat 			SSL, itp.
+                \item autoryzacji (ang. authorization) - mam dostęp do określonych zasobów, a do innych nie
+            \end{itemize}
+
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=6in]{pictures/uwierzytelnianie_klienta_web.png}
+        \caption{Uwierzytelnienie klienta web}
+        \label{fig3}
+     \end{figure}
+
+\section{Plan konserwacji}
+
+Plan konserwacji obejmuje weryfikację oraz poprawanie błędów w trakcie implementacji każdej z nowych funkcjonalności. Po zakończeniu projektu, nie sa planowane kolejne aktualizacje.
+
+\section{Warunki licencji}
+
+    Planneruz jest wolnym oprogramowaniem: możesz go rozprowadzać dalej
+    i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU,
+    wydanej przez Fundację Wolnego Oprogramowania - według wersji 3 tej
+    Licencji.\\
+
+    Planneruz rozpowszechniany jest z nadzieją, iż będzie on
+    użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej
+    gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH
+    ZASTOSOWAŃ. W celu uzyskania bliższych informacji sięgnij do Powszechnej Licencji Publicznej GNU.\\
+
+    Z pewnością wraz z Planneruz otrzymałeś też egzemplarz
+    Powszechnej Licencji Publicznej GNU (GNU General Public License).
+    Jeśli nie - zobacz http://www.gnu.org/licenses.\\
+
+\end{document}
+
