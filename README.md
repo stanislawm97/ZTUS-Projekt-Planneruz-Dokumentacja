@@ -1,3 +1,3 @@
 # ZTUS-Projekt-Planneruz-Dokumentacja
 
-Dokumentacja tworzona na na potrzeby przedmiotu "Zaawansowane technologie usług sieciowych".
+Dokumentacja do projektu "Planneruz", tworzonego na przedmiot "Zaawansowane technologie usług sieciowych".
