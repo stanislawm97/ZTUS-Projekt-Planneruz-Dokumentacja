@@ -189,6 +189,13 @@ wybór motywu													&możliwość dodania informacji o kolokwium do zaję�
      	\end{figure}
 
 \section{Diagram funkcjonalny/strukturalny}
+    Diagram strukturalny prezentuje sie jaka na rysunku \ref{diagram_funkcjonalny}. Platforma po otwarciu ładuje postawowe struktury danych czyli klasę odpowiedzialną za parsowanie wszystkich zajęć i wysyłanie ich do reszty komponentów oraz jednocześnie klasa pomocnicza która konwertuje dane na format json. Następnie ładowany jest główny widok planu wraz z jego komponentami w formacie jsp. Dalej ładowane są grupy oraz kierunki które można wybrać z bazy danych. Wybrana grupa wysyłana jest do serwisu odpowiedzialnego za dane do wyświetlenia i zapytanie zostaje obsłużone oraz zwracane są odpowiednie zajęcia. W przypadku zalogowanego użytkownika jego grupa ładowana jest automatycznie
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=0.9\textwidth]{pictures/Diagram_funkcjonalny.png}
+        \caption{Diagram strukturalny}
+        \label{diagram_funkcjonalny}
+     \end{figure}
 
 \clearpage
 \section{MOSCOW}
